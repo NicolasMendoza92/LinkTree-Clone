@@ -8,7 +8,12 @@ const nextConfig = {
         {
           hostname: 'my-linklist-app.s3.amazonaws.com',
         },
+        {
+          hostname: 'platform-lookaside.fbsbx.com',
+        }
+        
       ],
+      
     }
   }
   

@@ -1,3 +1,4 @@
+
 import { authOptions } from '@/app/api/auth/[...nextauth]/route';
 import {faLink} from "@fortawesome/free-solid-svg-icons";
 import { getServerSession } from 'next-auth'
@@ -18,7 +19,7 @@ export default async function Header() {
                         <span className="font-bold">LinkList</span>
                     </Link>
                     <nav className='flex items-center gap-4 text-slate-500 text-sm'>
-                        <Link href={'/about'}>About</Link>
+                        <Link href={'/about'} >About</Link>
                         <Link href={'/pricing'}>Pricing</Link>
                         <Link href={'/contact'}>Contact</Link>
                     </nav>

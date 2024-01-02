@@ -12,12 +12,16 @@ import { authOptions } from "../api/auth/[...nextauth]/route";
 import Image from "next/image";
 import { Toaster } from "react-hot-toast";
 
+
 export default async function AppTemplate({ children, ...rest }) {
+
+  const avatarIcon = '/images/userIcon.png'
 
   const session = await getServerSession(authOptions);
   if (!session) {
     return redirect('/');
   }
+
   mongoose.connect(process.env.MONGO_URI);
   const page = await Page.findOne({ owner: session.user.email });
   return (

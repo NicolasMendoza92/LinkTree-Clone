@@ -2,6 +2,7 @@ import LoginGoogle from "@/components/buttons/LoginGoogle";
 import { authOptions } from "../../api/auth/[...nextauth]/route";
 import { redirect } from "next/navigation";
 import { getServerSession } from "next-auth";
+import LoginFacebook from "@/components/buttons/LoginFacebook";
 
 
 export default async function LoginPage() {
@@ -22,6 +23,7 @@ export default async function LoginPage() {
           Sign in to your account using one of the methods below
         </p>
         <LoginGoogle />
+        <LoginFacebook />
       </div>
     </div>
   );

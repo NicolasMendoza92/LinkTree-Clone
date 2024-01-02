@@ -6,7 +6,6 @@ import { getServerSession } from "next-auth";
 export default async function Home() {
   const session = await getServerSession(authOptions);
   return (
-    <main>
       <section className='p-6 pt-32 max-w-4xl mx-auto'>
         <div className='max-w-md mb-6'>
           <h1 className='text-5xl font-bold'>
@@ -18,6 +17,5 @@ export default async function Home() {
         </div>
         <HeroForm user={session?.user}/>
       </section>
-    </main>
   )
 }
