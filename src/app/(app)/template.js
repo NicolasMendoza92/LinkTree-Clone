@@ -15,8 +15,6 @@ import { Toaster } from "react-hot-toast";
 
 export default async function AppTemplate({ children, ...rest }) {
 
-  const avatarIcon = '/images/userIcon.png'
-
   const session = await getServerSession(authOptions);
   if (!session) {
     return redirect('/');

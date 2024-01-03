@@ -15,7 +15,7 @@ export default async function LoginPage() {
 
   return (
     <div>
-      <div className="p-4 max-w-xs mx-auto">
+      <div className="p-8 m-8 max-w-xs mx-auto">
         <h1 className="text-4xl font-bold text-center mb-2">
           Sign In
         </h1>

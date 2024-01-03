@@ -5,11 +5,23 @@
 body{
   @apply bg-gray-100;
 }
+
+.footer-fix {
+  @apply bg-white mt-6 bottom-0 w-full font-bold text-sm shadow-lg
+}
+
 .input-forms-account {
   @apply bg-gray-100 w-full block py-2 px-2 mb-2
 }
 .input-label{
   @apply uppercase text-gray-400 text-xs mb-2 font-semibold;
+}
+
+.input-label-contact{
+  @apply text-gray-600 text-xl mt-2 mb-2 font-semibold;
+}
+.input-contact {
+  @apply bg-white w-full block py-2 px-2 mb-2 shadow;
 }
 
 /* Typicals CSS code */
@@ -36,4 +48,112 @@ input#navCb:checked ~ aside{
 }
 input#navCb:checked ~ .backdrop{
   display: block;
+}
+
+/* Toogle swicth button */
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: relative;
+  width: 220px;
+  height: 65px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.button.r,
+.button.r .layer {
+  border-radius: 60px;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #ebf7fc;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+#button-9 .knobs:before,
+#button-9 .knobs:after,
+#button-9 .knobs span {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 100px;
+  height: 56px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  border-radius: 40%;
+  transition: 0.4s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#button-9 .knobs:before {
+  content: "Monthly";
+  left: 110px;
+  padding-top: 18px;
+}
+
+#button-9 .knobs:after {
+  content: "Annually";
+  padding-top: 18px;
+  right: 55px;
+}
+
+#button-9 .knobs:before{
+  color: #000000;
+  z-index: 2;
+}
+#button-9 .knobs:after {
+  color: #fff;
+  z-index: 2;
+}
+
+#button-9 .knobs span {
+  left: 10px;
+  background-color: #3B8296;
+  z-index: 1;
+}
+
+#button-9 .checkbox:checked + .knobs:before {
+  left: 110px;
+  padding-top: 18px;
+}
+
+#button-9 .checkbox:checked + .knobs:after {
+  right: 55px;
+  padding-top: 18px;
+}
+
+#button-9 .checkbox:checked + .knobs span {
+  left: 110px;
+  background-color: #636363;
+}
+
+#button-9 .checkbox:checked ~ .layer {
+  background-color: #bebebe;
 }

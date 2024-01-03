@@ -1,12 +1,12 @@
+'use client';
 import Image from "next/image";
-
 
 export default function AboutPage() {
 
-  const aboutImg = '/images/wordAbout.png'
+  const aboutImg = '/images/worldAbout.png'
 
   return (
-      <section className='p-8 pt-32 pb-24 mx-auto'>
+      <section className='p-12  pt-32 mx-auto'>
         <div className='grid grid-cols-1 gap-3 mx-auto md:grid-cols-2'>
           <div>
             <h1 className='text-5xl font-bold'>
@@ -18,7 +18,7 @@ export default function AboutPage() {
             </h2>
           </div>
           <div>
-            <Image src={aboutImg} width={800} height={600} alt={'avatar'} />
+            <Image src={aboutImg} width={800} height={600} alt={'avatar'} priority={true} />
           </div>
         </div>
       </section>
