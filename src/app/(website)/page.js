@@ -1,21 +1,33 @@
 import HeroForm from "@/components/forms/HeroForm";
 import { authOptions } from "../api/auth/[...nextauth]/route";
 import { getServerSession } from "next-auth";
+import Image from "next/image";
 
 
 export default async function Home() {
   const session = await getServerSession(authOptions);
+
+  const homeImg = '/images/design_web_link.png'
+
   return (
-      <section className='p-6 pt-32 max-w-4xl mx-auto'>
-        <div className='max-w-md mb-6'>
-          <h1 className='text-5xl font-bold'>
-            Your one link  <br /> for everything
-          </h1>
-          <h2 className='text-gray-500 text-xl mt-6'>
-            Share your links, social profiles, contact info and more on one page
-          </h2>
+    <section className='p-6 pt-32 max-w-6xl mx-auto'>
+      <div className="grid grid-cols-1 items-center gap-3 mx-auto md:grid-cols-2">
+        <div className="mx-auto">
+          <div className='max-w-md  mb-6'>
+            <h1 className='text-5xl font-bold'>
+              Your one link  <br /> for everything
+            </h1>
+            <h2 className='text-gray-500 text-xl mt-6'>
+              Share your links, social profiles, contact info and more on one page
+            </h2>
+          </div>
+          <HeroForm user={session?.user} />
         </div>
-        <HeroForm user={session?.user}/>
-      </section>
+        <div>
+          <Image src={homeImg} width={800} height={600} alt={'homeImg'} priority={true} />
+        </div>
+      </div>
+
+    </section>
   )
 }

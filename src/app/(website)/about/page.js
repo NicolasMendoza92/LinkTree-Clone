@@ -16,6 +16,10 @@ export default function AboutPage() {
               Different Link Apps, integrations and visual styles can help you create a Linktree that looks and feels like you and your brand.
               Explore our library of custom templates to grow and connect with your audience even more easily!
             </h2>
+            <h2 className='text-gray-500 text-xl mt-6'>
+              Different Link Apps, integrations and visual styles can help you create a Linktree that looks and feels like you and your brand.
+              Explore our library of custom templates to grow and connect with your audience even more easily!
+            </h2>
           </div>
           <div>
             <Image src={aboutImg} width={800} height={600} alt={'avatar'} priority={true} />
