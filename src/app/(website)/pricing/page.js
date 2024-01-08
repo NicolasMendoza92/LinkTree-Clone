@@ -93,7 +93,7 @@ export default function PricingPage() {
           </div>
           <button
             className="bg-blue-100 shadow text-center py-4 px-4 flex gap-3 mx-auto mb-4 items-center justify-center rounded-lg border border-zinc-600 ">
-            Get Pro
+            Get pro
           </button>
           </div>
           

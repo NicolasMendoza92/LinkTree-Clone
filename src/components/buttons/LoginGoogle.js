@@ -10,7 +10,7 @@ export default function LoginGoogle() {
       onClick={() => signIn('google')}
       className="bg-white shadow text-center w-full py-4 flex gap-3 items-center justify-center">
       <FontAwesomeIcon icon={faGoogle} className="h-6" />
-      <span>Sign In with Google</span>
+      <span>Continue with Google</span>
     </button>
   );
 }

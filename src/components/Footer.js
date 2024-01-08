@@ -9,7 +9,7 @@ export default function Footer() {
 				<div className="p-5 ">
 					<ul>
 						<p className="text-gray-800 font-bold text-3xl pb-6">
-							Link<span className="text-blue-600">list</span>
+							Link<span className="text-blue-600">tree</span>
 						</p>
 						<div className="flex gap-6 pb-5">
 							<FontAwesomeIcon icon={faInstagram} className="text-2xl cursor-pointer hover:text-blue-600" />
@@ -58,7 +58,7 @@ export default function Footer() {
 				<h1 className=" text-gray-800 font-semibold">
 					© 2024 All rights reserved | Build with Next.js by{" "}
 					<span className="hover:text-blue-600 font-semibold cursor-pointer">
-						streamline{" "}
+						nicomendoza{" "}
 					</span>
 				</h1>
 			</div>

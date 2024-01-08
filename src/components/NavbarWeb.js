@@ -21,7 +21,7 @@ export default function NavbarWeb({ session }) {
             <div className='flex items-center gap-6 '>
                 <Link href={'/'} className="flex items-center gap-2 text-blue-500">
                     <FontAwesomeIcon icon={faLink} className="text-blue-500" />
-                    <span className="font-bold">LinkList</span>
+                    <span className="font-bold">LinkTree</span>
                 </Link>
             </div>
             <div className="hidden md:flex justify-between items-center gap-5">

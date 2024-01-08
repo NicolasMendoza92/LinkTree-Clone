@@ -10,7 +10,7 @@ export default function LoginFacebook() {
       onClick={() => signIn('facebook')}
       className="bg-white shadow text-center w-full py-4 flex gap-3 mt-2 items-center justify-center">
       <FontAwesomeIcon icon={faFacebook} className="h-6" />
-      <span>Sign In with Facebook</span>
+      <span>Continue with Facebook</span>
     </button>
   );
 }

@@ -41,7 +41,7 @@ export default function HeroForm({ user }) {
   return (
     <div>
       <form onSubmit={handleSubmit} className='inline-flex items-center shadow-lg shadow-gray-700/20'>
-        <span className='bg-white py-4 pl-4'>linklist.to/</span>
+        <span className='bg-white py-4 pl-4'>link.to/</span>
         <input
           type='text'
           className='py-4 '
