@@ -23,7 +23,7 @@ export default async function Home() {
           </div>
           <HeroForm user={session?.user} />
         </div>
-        <div>
+        <div className="mt-3">
           <Image src={homeImg} width={800} height={600} alt={'homeImg'} priority={true} />
         </div>
       </div>

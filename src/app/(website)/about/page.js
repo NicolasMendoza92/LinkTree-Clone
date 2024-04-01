@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function AboutPage() {
 
-  const aboutImg = '/images/worldAbout.png'
+  const aboutImg = '/images/worldconnect.png'
 
   return (
-      <section className='p-12  pt-32 mx-auto'>
+      <section className='p-6 pt-32 max-w-6xl mx-auto'>
         <div className='grid grid-cols-1 gap-3 mx-auto md:grid-cols-2'>
           <div>
             <h1 className='text-5xl font-bold'>

@@ -50,7 +50,7 @@ export default function ContactPage() {
   }
 
   return (
-    <section className='p-12 pt-32 mb-6 mx-auto'>
+    <section className='p-6 pt-32 max-w-6xl mx-auto'>
       <div className='grid grid-cols-1 gap-3 mx-auto md:grid-cols-2 items-center'>
         <div>
           <h1 className='text-5xl font-bold mb-2'>

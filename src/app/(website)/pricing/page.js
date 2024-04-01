@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function PricingPage() {
   return (
-    <section className='p-12  pt-32 mx-auto'>
+    <section className='p-6 pt-32 max-w-6xl mx-auto'>
       <div className='flex flex-col items-center'>
         <h1 className='text-5xl font-bold'>
           Pricing

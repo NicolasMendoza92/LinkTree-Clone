@@ -5,7 +5,7 @@ import React from 'react'
 export default function Footer() {
     return (
         <footer className='footer-fix'>
-			<div className="flex items-center md:flex-row flex-col justify-around items-start p-20">
+			<div className="flex items-start md:flex-row flex-col justify-around items-start p-20">
 				<div className="p-5 ">
 					<ul>
 						<p className="text-gray-800 font-bold text-3xl pb-6">
@@ -23,16 +23,16 @@ export default function Footer() {
 					<ul>
 						<p className="text-gray-800 font-bold text-2xl pb-4">Product</p>
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							Stocks
+							Pricing
 						</li>
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							Futures & Options
+							Details
 						</li>
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							Mutual Funds
+							Items and support
 						</li>
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							Fixed deposits
+							More
 						</li>
 					</ul>
 				</div>
