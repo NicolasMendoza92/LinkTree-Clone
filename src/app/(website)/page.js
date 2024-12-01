@@ -10,7 +10,6 @@ export default async function Home() {
   const homeImg = '/images/design_web_link.png'
 
   return (
-    <section className='p-6 pt-32 max-w-6xl mx-auto'>
       <div className="grid grid-cols-1 items-center gap-3 mx-auto md:grid-cols-2">
         <div className="mx-auto">
           <div className='max-w-md  mb-6'>
@@ -27,7 +26,5 @@ export default async function Home() {
           <Image src={homeImg} width={800} height={600} alt={'homeImg'} priority={true} />
         </div>
       </div>
-
-    </section>
   )
 }
